@@ -4,6 +4,8 @@ var firstCardClasses;
 var secondCardClasses;
 var maxMatches = 9;
 var matches = 0;
+var attempts = 0;
+var gamesPlayed = 0;
 var main = document.getElementById("gameCards");
 
 main.addEventListener("click", handleClick);
@@ -24,6 +26,8 @@ function handleClick(event){
         firstCardClicked = null;
         secondCardClicked = null;
         matches++;
+        attempts++;
+        displayStats();
         if(matches === maxMatches){
           document.querySelector(".modal-overlay").classList.remove("hidden");
         }
@@ -34,6 +38,8 @@ function handleClick(event){
           main.addEventListener("click", handleClick);
           firstCardClicked = null;
           secondCardClicked = null;
+          attempts++;
+          displayStats();
         }, 1500);
       }
   }
