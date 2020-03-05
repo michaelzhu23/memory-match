@@ -1,4 +1,11 @@
+var firstCardClicked;
+var secondCardClicked;
+var firstCardClasses;
+var secondCardClasses;
+var maxMatches = 9;
+var matches = 0;
 var main = document.getElementById("gameCards");
+
 main.addEventListener("click", handleClick);
 function handleClick(event){
   if (event.target.className.indexOf("card-back") === -1) {
@@ -16,6 +23,10 @@ function handleClick(event){
         main.addEventListener("click", handleClick);
         firstCardClicked = null;
         secondCardClicked = null;
+        matches++;
+        if(matches === maxMatches){
+          document.querySelector(".modal-overlay").classList.remove("hidden");
+        }
       } else {
         setTimeout(function(){
           firstCardClicked.classList.remove("hidden");
@@ -27,8 +38,3 @@ function handleClick(event){
       }
   }
 }
-
-var firstCardClicked;
-var secondCardClicked;
-var firstCardClasses;
-var secondCardClasses;
