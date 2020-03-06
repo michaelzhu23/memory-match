@@ -22,7 +22,13 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
   color: forestgreen;
+}
+
+#resetButton {
+  font-size: 2rem;
+  border-radius: 10px;
 }
 
 h1 {
