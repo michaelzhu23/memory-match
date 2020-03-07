@@ -1,3 +1,49 @@
+var cards = [
+  "css-logo",
+  "docker-logo",
+  "github-logo",
+  "html-logo",
+  "js-logo",
+  "mysql-logo",
+  "node-logo",
+  "php-logo",
+  "react-logo",
+  "css-logo",
+  "docker-logo",
+  "github-logo",
+  "html-logo",
+  "js-logo",
+  "mysql-logo",
+  "node-logo",
+  "php-logo",
+  "react-logo"
+];
+
+function startGame(array){
+  while (main.firstChild) {
+    main.removeChild(main.firstChild);
+  }
+  for (var shuffleIndex = 0; shuffleIndex < array.length; shuffleIndex++) {
+    var randomPosition = Math.floor(Math.random() * array.length)
+    var placeHolder = array[shuffleIndex];
+    array[shuffleIndex] = array[randomPosition];
+    array[randomPosition] = placeHolder;
+  }
+  for (var createIndex = 0; createIndex < array.length; createIndex++){
+    var cardDiv = document.createElement("div");
+    cardDiv.classList.add("col-2", "card");
+    var cardFrontDiv = document.createElement("div");
+    cardFrontDiv.classList.add("card-front", array[createIndex]);
+    var cardBackDiv = document.createElement("div");
+    cardBackDiv.className = "card-back";
+    cardDiv.append(cardFrontDiv, cardBackDiv);
+    main.appendChild(cardDiv);
+  }
+}
+
+startGame(cards);
+
+
 function displayStats(){
   document.getElementById("gamesPlayedId").textContent = gamesPlayed;
   document.getElementById("attemptsId").textContent = attempts;
