@@ -1,6 +1,6 @@
 body {
   height: 97vh;
-  background-image: url(../images/lfz-background.jpg);
+  background-image: url(../images/NBA/Baksetball-court-floor2.jpg);
   background-repeat: no-repeat;
 }
 
@@ -15,28 +15,28 @@ body {
 }
 
 .modal-content {
-  background-color: lavender;
-  width: 30%;
+  background-color: gold;
+  width: 40%;
   height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  color: forestgreen;
 }
 
 #resetButton {
-  font-size: 2rem;
+  font-size: 4vh;
   border-radius: 10px;
+  font-family: octin-prison;
+  width: 40%;
+  height: 20%;
 }
 
 h1 {
-  font-size: 4rem;
-}
-
-.gameData {
-  font-size: 2rem;
+  font-size: 7vh;
+  color: white;
+  font-family: sports-night;
 }
 
 .container {
@@ -53,14 +53,14 @@ h1 {
 }
 
 .top {
-  height: 10%;
+  height: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .bottom {
-  height: 90%;
+  height: 92%;
 }
 
 aside {
@@ -72,11 +72,29 @@ aside {
 }
 
 .gameData {
-  height: 13%;
-  background-color: lightblue;
+  font-size: 220%;
+  height: 10%;
+  font-family: scoreboard;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gameData:nth-child(even) {
+  background-color: lightgray;
+}
+
+#scoreboardId {
+  font-family: octin-prison;
+  letter-spacing: 1px;
+  font-size: 4vh;
+}
+
+#timer {
+  font-family: digital;
+  font-size: 7vh;
+  color: red;
 }
 
 main {
@@ -88,7 +106,7 @@ main {
 }
 
 .card {
-  height: 30%;
+  height: 32.2%;
   background-image: url(../images/lfz-card.jpg);
   background-size: cover;
   background-position: center;
@@ -142,43 +160,43 @@ main {
 }
 
 .card-back {
-  background-image: url(../images/lfz-card.jpg);
+  background-image: url(../images/NBA/Kobe-dribble-logo.png);
 }
 
-.css-logo {
-  background-image: url(../images/css-logo.png);
+.zion {
+  background-image: url(../images/NBA/Zion-Williamson.png);
 }
 
-.docker-logo {
-  background-image: url(../images/docker-logo.jpg);
+.doncic {
+  background-image: url(../images/NBA/Luka-Doncic.png);
 }
 
-.github-logo {
-  background-image: url(../images/gitHub-logo.png);
+.lebron {
+  background-image: url(../images/NBA/LeBron-James.png);
 }
 
-.html-logo {
-  background-image: url(../images/html-logo.png);
+.kawhi {
+  background-image: url(../images/NBA/Kawhi-Leonard.png);
 }
 
-.js-logo {
-  background-image: url(../images/js-logo.png);
+.harden {
+  background-image: url(../images/NBA/James-Harden.png);
 }
 
-.mysql-logo {
-  background-image: url(../images/mysql-logo.jpg);
+.morant {
+  background-image: url(../images/NBA/Ja-Morant.png);
 }
 
-.node-logo {
-  background-image: url(../images/node-logo.png);
+.giannis {
+  background-image: url(../images/NBA/Giannis-Antetokounmpo.png);
 }
 
-.php-logo {
-  background-image: url(../images/php-logo.jpeg);
+.donovan {
+  background-image: url(../images/NBA/Donovan-Mitchell.png);
 }
 
-.react-logo {
-  background-image: url(../images/react-logo.png);
+.lillard {
+  background-image: url(../images/NBA/Damian-Lillard.png);
 }
 
 .hidden {

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: scoreboard;
+  src: url(Fonts/scoreboard.ttf);
+}
+
+@font-face {
+  font-family: digital;
+  src: url(Fonts/digital-7.ttf);
+}
+
+@font-face {
+  font-family: sports-night;
+  src: url(Fonts/SFSportsNight.ttf);
+}
+
+@font-face {
+  font-family: octin-prison;
+  src: url(Fonts/octin\ prison\ rg.ttf);
+}
+
+@font-face {
+  font-family: octin-intage;
+  src: url(Fonts/octin\ vintage\ b\ rg.ttf);
+}
